@@ -15,7 +15,7 @@ const Bannar = () => {
 
           {/* Banner */}
           <div
-            className="w-full h-[600px] bg-no-repeat bg-center bg-cover rounded-[64px] relative overflow-hidden"
+            className="w-full h-[600px] bg-no-repeat bg-center bg-cover rounded-[24px] lg:rounded-[64px] relative overflow-hidden"
             style={{
               backgroundImage: `url(${BgImage})`,
             }}
@@ -28,11 +28,11 @@ const Bannar = () => {
               </div>
             </div>
             {/* Bottom-Left Content */}
-            <div className="absolute left-12 bottom-12 w-full max-w-[490px]">
-              <h3 className="text-[48px] lg:text-[74px] font-semibold text-white leading-tight">
+            <div className="absolute left-4 lg:left-12 bottom-4 lg:bottom-12 w-[235px] lg:w-[490px]">
+              <h3 className="text-[24px] lg:text-[74px] font-semibold text-white leading-tight">
                 NIKE AIR MAX
               </h3>
-              <p className="text-[18px] lg:text-[24px] text-[#E7E7E3] font-semibold mb-6">
+              <p className="text-[14px] lg:text-[24px] text-[#E7E7E3] font-semibold mb-6">
                 Nike introducing the new air max for everyone's comfort
               </p>
               <button className="uppercase bg-[#4A69E2] px-8 py-4 text-white rounded-[8px] hover:bg-blue-700 transition">
@@ -41,11 +41,11 @@ const Bannar = () => {
             </div>
 
             {/* Bottom-Right Image */}
-            <div className="absolute right-8 bottom-8">
+            <div className="absolute right-4 lg:right-8 bottom-4 lg:bottom-8">
               <img
                 src={ExtraImage}
                 alt="Extra Image"
-                className="w-[140px] lg:w-[180px] rounded-xl"
+                className="w-[64px] lg:w-[160px] rounded-xl"
               />
             </div>
           </div>
