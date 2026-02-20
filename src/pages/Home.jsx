@@ -1,7 +1,12 @@
 import React from "react";
+import Bannar from "../components/home/Bannar";
 
 const Home = () => {
-  return <div>Home is working well.</div>;
+  return (
+    <div>
+      <Bannar />
+    </div>
+  );
 };
 
 export default Home;
