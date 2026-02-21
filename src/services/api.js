@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://fakeapi.platzi.com/en/rest",
+  baseURL: "https://api.escuelajs.co/api/v1",
 });
 
 export default api;
