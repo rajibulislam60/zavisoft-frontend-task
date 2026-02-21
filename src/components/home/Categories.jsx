@@ -65,10 +65,10 @@ const Categories = () => {
 
                 {/* Optional overlay title */}
                 <div>
-                  <h4 className="absolute bottom-4 left-4 text-black text-[36px] font-semibold">
+                  <h4 className="absolute bottom-4 left-4 text-black text-[24px] lg:text-[36px] font-semibold">
                     {item.name}
                   </h4>
-                  <button className="absolute bottom-4 right-4 p-3 bg-black text-white rounded-[8px]">
+                  <button className="absolute bottom-4 right-4 p-2 lg:p-3 bg-black text-white rounded-[8px]">
                     <GoArrowUpRight />
                   </button>
                 </div>
