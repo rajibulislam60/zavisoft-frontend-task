@@ -4,6 +4,7 @@ import { IoSearchSharp, IoPerson, IoMenu, IoClose } from "react-icons/io5";
 import { BsFire } from "react-icons/bs";
 import { MdArrowDropDown, MdArrowDropUp } from "react-icons/md";
 import LogoImage from "../../images/Logo.png";
+import { Link } from "react-router";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false); // Mobile menu toggle
@@ -28,12 +29,14 @@ const Navbar = () => {
 
               {/* Desktop Menu */}
               <ul className="hidden lg:flex gap-10 items-center">
-                <li className="flex gap-1 items-center cursor-pointer">
-                  New Drops
-                  <span className="text-amber-600">
-                    <BsFire />
-                  </span>
-                </li>
+                <Link to="/">
+                  <li className="flex gap-1 items-center cursor-pointer">
+                    New Drops
+                    <span className="text-amber-600">
+                      <BsFire />
+                    </span>
+                  </li>
+                </Link>
 
                 <li className="cursor-pointer flex items-center gap-1 relative group">
                   Men

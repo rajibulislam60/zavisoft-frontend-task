@@ -1,6 +1,5 @@
 import React from "react";
 import Container from "./../Container";
-import ProductImage from "../../images/Rectangle 5.png";
 import { useProducts } from "../../context/ProductContext";
 import { Link } from "react-router";
 
@@ -30,12 +29,12 @@ const NewDropProducts = () => {
                     className="rounded-[12px] border-2 border-white object-cover"
                   />
                 </div>
-                <h3 className="text-[24px] font-semibold my-4">
+                <h3 className="text-[24px] font-semibold my-4 line-clamp-2 h-[68px]">
                   {product.title}
                 </h3>
                 <button className="uppercase text-[14px] font-medium text-center py-[15px] w-full rounded-[8px] text-white bg-[#232321]">
                   view product -{" "}
-                  <span className="text-[#FFA52F]">{product.price}</span>
+                  <span className="text-[#FFA52F]">${product.price}</span>
                 </button>
               </Link>
             ))}
