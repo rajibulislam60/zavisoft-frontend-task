@@ -37,36 +37,39 @@ const Navbar = () => {
                     </span>
                   </li>
                 </Link>
+                <Link to="/products">
+                  <li className="cursor-pointer flex items-center gap-1 relative group">
+                    Men
+                    <MdArrowDropDown className="group-hover:hidden" />
+                    <MdArrowDropUp className="hidden group-hover:block" />
+                    {/* Desktop Dropdown */}
+                    <ul className="absolute top-full left-0 mt-2 bg-white shadow-lg rounded-lg py-2 min-w-[120px] opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-opacity">
+                      <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                        Men Tops
+                      </li>
+                      <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                        Men Bottoms
+                      </li>
+                    </ul>
+                  </li>
+                </Link>
 
-                <li className="cursor-pointer flex items-center gap-1 relative group">
-                  Men
-                  <MdArrowDropDown className="group-hover:hidden" />
-                  <MdArrowDropUp className="hidden group-hover:block" />
-                  {/* Desktop Dropdown */}
-                  <ul className="absolute top-full left-0 mt-2 bg-white shadow-lg rounded-lg py-2 min-w-[120px] opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-opacity">
-                    <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
-                      Men Tops
-                    </li>
-                    <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
-                      Men Bottoms
-                    </li>
-                  </ul>
-                </li>
-
-                <li className="cursor-pointer flex items-center gap-1 relative group">
-                  Woman
-                  <MdArrowDropDown className="group-hover:hidden" />
-                  <MdArrowDropUp className="hidden group-hover:block" />
-                  {/* Desktop Dropdown */}
-                  <ul className="absolute top-full left-0 mt-2 bg-white shadow-lg rounded-lg py-2 min-w-[120px] opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-opacity">
-                    <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
-                      Woman Tops
-                    </li>
-                    <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
-                      Woman Bottoms
-                    </li>
-                  </ul>
-                </li>
+                <Link to="/products">
+                  <li className="cursor-pointer flex items-center gap-1 relative group">
+                    Woman
+                    <MdArrowDropDown className="group-hover:hidden" />
+                    <MdArrowDropUp className="hidden group-hover:block" />
+                    {/* Desktop Dropdown */}
+                    <ul className="absolute top-full left-0 mt-2 bg-white shadow-lg rounded-lg py-2 min-w-[120px] opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-opacity">
+                      <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                        Woman Tops
+                      </li>
+                      <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                        Woman Bottoms
+                      </li>
+                    </ul>
+                  </li>
+                </Link>
               </ul>
             </div>
 
