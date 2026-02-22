@@ -2,6 +2,7 @@ import React from "react";
 import Container from "./../Container";
 import ProductImage from "../../images/Rectangle 5.png";
 import { useProducts } from "../../context/ProductContext";
+import { Link } from "react-router";
 
 const NewDropProducts = () => {
   const { products, error } = useProducts();
@@ -21,7 +22,7 @@ const NewDropProducts = () => {
           </div>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
             {products.slice(0, 4).map((product) => (
-              <div key={product.id}>
+              <Link to={`/products/${product.id}`} key={product.id}>
                 <div className="">
                   <img
                     src={product.images[0]}
@@ -36,7 +37,7 @@ const NewDropProducts = () => {
                   view product -{" "}
                   <span className="text-[#FFA52F]">{product.price}</span>
                 </button>
-              </div>
+              </Link>
             ))}
           </div>
         </div>

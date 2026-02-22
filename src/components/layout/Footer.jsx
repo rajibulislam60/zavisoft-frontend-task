@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <div>
       <Container>
-        <div className="bg-[#4A69E2] rounded-b-[24px]">
+        <div className="bg-[#4A69E2] rounded-[24px]">
           {/* Footer Search Area */}
           <div className="text-white lg:flex justify-between items-center px-4 lg:px-0 py-8 lg:py-0">
             <div className=" lg:px-[72px] lg:py-[64px] lg:w-[50%] mb-8 lg:mb-0">
@@ -43,7 +43,7 @@ const Footer = () => {
               <img
                 src={GroupLogoImage}
                 alt="Logo"
-                className="w-[200px] lg:w-full"
+                className="w-[200px] lg:w-auto"
               />
             </div>
           </div>
