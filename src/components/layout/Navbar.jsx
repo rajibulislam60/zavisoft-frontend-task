@@ -82,9 +82,11 @@ const Navbar = () => {
             <div className="flex gap-6 items-center">
               <IoSearchSharp className="w-6 h-6 cursor-pointer hidden lg:flex" />
               <IoPerson className="w-6 h-6 cursor-pointer" />
-              <div className="w-8 h-8 bg-[#FFA52F] rounded-full flex items-center justify-center text-sm font-medium">
-                0
-              </div>
+              <Link to="/cart">
+                <div className="w-8 h-8 bg-[#FFA52F] rounded-full flex items-center justify-center text-sm font-medium">
+                  0
+                </div>
+              </Link>
             </div>
           </div>
 

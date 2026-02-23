@@ -24,7 +24,7 @@ const SuggestProducts = () => {
   };
 
   return (
-    <div className=" pt-16">
+    <div className=" py-16">
       <Container>
         <div>
           {/* Header */}

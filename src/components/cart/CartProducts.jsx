@@ -7,7 +7,7 @@ import CartImage from "../../images/Rectangle 5.png";
 
 const CartProducts = () => {
   return (
-    <div className="py-10 bg-gray-50">
+    <div className="py-10">
       <Container>
         {/* Main Layout */}
         <div className="flex flex-col lg:flex-row gap-10">
@@ -26,7 +26,7 @@ const CartProducts = () => {
               <img
                 src={CartImage}
                 alt="Product"
-                className="w-[207px] h-[225px] object-cover rounded-[16px]"
+                className="w-[156px] lg:w-[207px] h-[216px] lg:h-[225px] object-cover rounded-[16px]"
               />
 
               {/* Product Info */}
@@ -56,6 +56,13 @@ const CartProducts = () => {
                   </div>
                 </div>
 
+                {/* Price */}
+                <div className="lg:hidden flex items-start">
+                  <h3 className="text-blue-700 text-[18px] font-semibold">
+                    $125.00
+                  </h3>
+                </div>
+
                 {/* Actions */}
                 <div className="flex gap-5  text-gray-600">
                   <button className="hover:text-black">
@@ -68,7 +75,7 @@ const CartProducts = () => {
               </div>
 
               {/* Price */}
-              <div className="flex items-start">
+              <div className="hidden flex items-start">
                 <h3 className="text-blue-700 text-[18px] font-semibold">
                   $125.00
                 </h3>
@@ -77,7 +84,7 @@ const CartProducts = () => {
           </div>
 
           {/* Order Summary */}
-          <div className="p-6 w-full lg:w-[40%] h-fit">
+          <div className="bg-white rounded-[24px] lg:bg-[#e7e7e3] lg:rounded-none p-6 w-full lg:w-[40%] h-fit">
             <h3 className="text-[24px] font-semibold mb-6">Order Summary</h3>
 
             <div className="space-y-3 text-[14px] font-medium">

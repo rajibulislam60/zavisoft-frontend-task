@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useParams } from "react-router";
+import { Link, useNavigate, useParams } from "react-router";
 import { FaRegHeart } from "react-icons/fa";
 import Container from "../components/Container";
 import { useProducts } from "../context/ProductContext";
@@ -8,6 +8,7 @@ import SuggestProducts from "../components/product/SuggestProducts";
 
 const ProductDetails = () => {
   const { id } = useParams();
+  const navigate = useNavigate();
   const { products } = useProducts();
   const [selectedSize, setSelectedSize] = useState(41);
 
@@ -62,8 +63,11 @@ const ProductDetails = () => {
               </div>
 
               {/* ACTION BUTTONS */}
-              <div className="mt-8 flex gap-3">
-                <button className="flex-1 uppercase bg-black text-white py-3 rounded-[8px] hover:bg-gray-900">
+              <div className="mt-8 flex gap-3 w-full">
+                <button
+                  onClick={() => navigate("/cart")}
+                  className="w-full flex-1 uppercase bg-black text-white py-3 rounded-[8px] hover:bg-gray-900"
+                >
                   Add to cart
                 </button>
 
@@ -72,7 +76,10 @@ const ProductDetails = () => {
                 </button>
               </div>
 
-              <button className="uppercase w-full bg-blue-600 text-white py-3 rounded-[8px] mt-4 hover:bg-blue-700">
+              <button
+                onClick={() => navigate("/cart")}
+                className="uppercase w-full bg-blue-600 text-white py-3 rounded-[8px] mt-4 hover:bg-blue-700"
+              >
                 Buy it now
               </button>
 
